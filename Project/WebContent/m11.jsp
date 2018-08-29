@@ -12,23 +12,28 @@
     </head>
     <body> 
         <header>
-            <ul class="menu">
-                <li><a href="character.html">캐릭터 소개</a></li>
-                <li><a href="movie.html">극장판 추천</a></li>
-                <li><a href="activity.html">사건 모아보기</a></li>
-                <li><a href="place.html">장소별 보기</a></li>
-            </ul>
+	    	<img src="image/title.png" id="titleimg">
         </header>
+        
+        <nav>
+            <ul class="menu">
+            	<li></li>
+              <li><a href="character.html">캐릭터 소개</a></li>
+              <li><a href="movie.html">극장판 추천</a></li>
+              <li><a href="activity.html">사건 모아보기</a></li>
+              <li><a href="place.html">장소별 보기</a></li>
+            </ul>
+        </nav>
 
         <section>
-            <div class="im">
+            <div class="movie_img">
                 <h1>영화 상세</h1>
-                <hr class="sli"><br>
+                <hr class="hr_bold"><br>
                 <img src="image/m11.jpg"> 
             </div>
-            <div class="content2">
+            <div class="movie_content">
                 <h2>제트</h2>
-                <hr class="exx">
+                <hr class="hr_bold">
                 <h4>감독 : 시미즈 아츠지</h4>
                 <h4>장르 : 애니메이션, 액션</h4>
                 <h4>상영시간 : 107분</h4>
@@ -40,12 +45,12 @@
             </div>
         </section>
 
-        <sesction>
-            <div class="content3">
+        <section>
+            <div class="movie_review">
                 <h1>평점 및 리뷰</h1>
-                <hr class="sli"><br>
+                <hr class="hr_bold"><br>
             </div>
-            <div class="formcs">
+            <div class="movie_review_form">
 	            <form action="m1Proc.jsp" method="post" >
 	                    <table border=0 class="formcs">
 	                    <tbody>
@@ -103,6 +108,6 @@
 %>
 				</table>
 			</DIV>
-        </sesction>
+        </section>
     </body>
 </html>

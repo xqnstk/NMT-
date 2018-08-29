@@ -3,37 +3,38 @@
     <head>
         <meta charset="UTF-8">
         <meta charset="euc-kr"> <!--한국어 지원-->
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="style.css">
         <title>One-piece</title>
     </head>
     <style>
-        a{color:white; text-decoration: white;}
-        h1{color:black;}
-        #mov{text-align: center; border-collapse:collapse; border:1px gray solid;}
-        td{padding: 5px 20px;}
+        img{float: left; width: 16.3%; height:40%; margin: 20px; padding:10px; opacity: 1;transition: .5s ease;}
+        img:hover{opacity:0.5;}
     </style>
     <body>
-        <header>
-            <ul class="menu">
-                <li><a href="character.html">캐릭터 소개</a></li>
-                <li><a href="movie.html">극장판 추천</a></li>
-                <li><a href="activity.html">사건 모아보기</a></li>
-                <li><a href="place.html">장소별 보기</a></li>
-            </ul>
+    	<header>
+	    	<img src="image/title.png" id="titleimg">
         </header>
-        <br><Br><br>
-        <center>
-        <table style="border:none;">
+        
+        <nav>
+            <ul class="menu">
+              <li><a href="character.html">캐릭터 소개</a></li>
+              <li><a href="movie.html">극장판 추천</a></li>
+              <li><a href="activity.html">사건 모아보기</a></li>
+              <li><a href="place.html">장소별 보기</a></li>
+            </ul>
+        </nav>
+
+        <table>
             <tr>
-                <td><a href="m1.jsp"><img src="image/m1.jpg"; ></a>  </td>
-                <td><a href="m2.jsp"><img src="image/m2.jpg"; ></a>  </td>
-                <td><a href="m10.jsp"><img src="image/m10.jpg"; ></a>  </td>
+                <td><a href="m1.jsp"><img src="image/m1.jpg"></a>  </td>
+                <td><a href="m2.jsp"><img src="image/m2.jpg"></a>  </td>
+                <td><a href="m10.jsp"><img src="image/m10.jpg" ></a>  </td>
             </tr>
             <tr>
-                <td><a href="m11.jsp"><img src="image/m11.jpg"; ></a>  </td>
-                <td><a href="m13.jsp"><img src="image/m13.jpg"; ></a>  </td>
+                <td><a href="m11.jsp"><img src="image/m11.jpg"></a>  </td>
+                <td><a href="m13.jsp"><img src="image/m13.jpg"></a>  </td>
             </tr>     
         </table>
-    </center>
+
     </body>
 </html>
