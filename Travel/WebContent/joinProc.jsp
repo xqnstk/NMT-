@@ -5,15 +5,16 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>회원가입</title>
 </head>
 <body>
 	<%
-		request.setCharacterEncoding("utf-8"); //Set encoding
+		request.setCharacterEncoding("utf-8"); 
+	
+		//POST로 Input.html로부터 입력받은 내용을 변수화
 		String id = request.getParameter("id");
 		String name = request.getParameter("name");
 		String pwd = request.getParameter("pwd");
-		//POST로 Input.html로부터 입력받은 내용을 변수화
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -22,7 +23,6 @@
 			Statement stat = con.createStatement();
 
 			String query = "INSERT INTO member(name, id, pwd)  VALUES('" + name + "','" + id + "','" + pwd + "')";
-			//INSERT into member(id,name,pwd,email) VALUES ('id','name','pwd','email') 쿼리문
 			stat.executeUpdate(query);
 			stat.close();
 			con.close();

@@ -6,27 +6,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>로그인</title>
 </head>
 <body>
 
 <%
+request.setCharacterEncoding("utf-8"); 
+
 try {
 	Class.forName("com.mysql.jdbc.Driver");
 	String url = "jdbc:mysql://localhost:3306/travel";
 	Connection con = DriverManager.getConnection(url, "admin", "1234");
 	Statement stat = con.createStatement();
     
-     // sql 구사
-     // 전 페이지인 LOGIN.jsp input에 입력한 값들을 변수에 담는다
-     String user_id= request.getParameter("id");
-     String user_pw= request.getParameter("pwd");
+    String user_id= request.getParameter("id");
+    String user_pw= request.getParameter("pwd");
      
-    // 내가 입려한 id와 pw 값이 DB안에 있는지 확인한다
     String sql = "SELECT * FROM member WHERE id='" + user_id + "'and pwd='" + user_pw + "'";
     stat.executeQuery(sql);
     ResultSet rs = stat.executeQuery(sql);
-    
     
     // isLogin 은 로그인 확인 유무를 위한 변수
     Boolean isLogin = false;
@@ -41,13 +39,11 @@ try {
         session.setAttribute("id", user_id); 
         session.setAttribute("pwd", user_pw);
         // 첫 페이지로 돌려보낸다
-        response.sendRedirect("main.jsp");    
+        response.sendRedirect("index.jsp");    
     } else {
         // DB에 내가적은 정보가 없다면 경고창을 띄워준다
         %> <script> alert("로그인 실패"); history.go(-1); </script> <%            
     }
-    
-    
 } catch (Exception e) {       
     out.println(e);
 }

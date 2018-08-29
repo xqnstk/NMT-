@@ -4,34 +4,29 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<link rel="stylesheet" href="cs.css">
+<title>여행지 추천받기</title>
 </head>
 <body>
-	start페이지다 !
-	
-	<form>
-	<h2>성별</h2>
-		<input type="radio" name="gender" value="woman" checked> 여자 <br>
-  		<input type="radio" name="gender" value="man"> 남자 <br>
+<jsp:include  page="top.jsp" flush="false"></jsp:include>
+
+	<form action="startProc.jsp" method="post" class="csform">
 	<h2>연령</h2>
-  		<input type="radio" name="age" value="one"> 청소년 <br>
-  		<input type="radio" name="age" value="two"> 어른 <br>
-  		<input type="radio" name="age" value="three"> 아저씨 <br>   
-  	<h2>지역</h2>
+  		<input type="radio" name="age" value="10"> 청소년 
+  		<input type="radio" name="age" value="20"> 성인 <br>
+  	<h2>테마</h2>
   		<input type="radio" name="area" value="hotplace"> 핫플 <br>
-  		<input type="radio" name="area" value="quiet"> 한적 <br>   
-  		<input type="radio" name="area" value="itaewon"> 이태원 <br> 
-  		<input type="radio" name="area" value="sinchon"> 신촌 <br>     
-  		<input type="radio" name="area" value="yonnamdong"> 연남동 <br>   
-  		<input type="radio" name="area" value="sinsa"> 가로수길 <br>
-  		<input type="radio" name="area" value="kangnam"> 강남 <br>   
-  	<h2>돈</h2>
-  		<input type="radio" name="fee" value="no"> 무자본 <br>
-  		<input type="radio" name="fee" value="small"> 만원 <br>
-  		<input type="radio" name="fee" value="normal"> 5만원 <br>   
-  		<input type="radio" name="fee" value="big"> 10만원 <br>   
+  		<input type="radio" name="area" value="trip"> 여행 <br>   
+  		<input type="radio" name="area" value="nature"> 자연 <br> 
+  		<input type="radio" name="area" value="sinchon"> 맛집 <br>    
+  	<h2>요금</h2>
+  		<input type="radio" name="fee" value="50000">40000원 이하 <br>
+  		<input type="radio" name="fee" value="100000">80000원 이하 <br>
+  		<input type="radio" name="fee" value="150000">상관x<br>     
+  	<br><br><br><br>
+  		<input type="submit" value="결과 보기"> 
+		<input type="reset" value="취소">
   		
 	</form>
-	
 </body>
 </html>
