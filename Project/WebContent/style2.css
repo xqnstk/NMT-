@@ -1,0 +1,148 @@
+
+body{
+    background-color: white;
+}
+.btn{
+	width:70px;
+    height:70px;
+}
+
+img{
+    width:220px;
+    height:300px;
+}
+table img:hover{
+    opacity: 0.5;
+}
+table{
+    border:none;
+}
+table img {
+    width:300px;
+    height:450px;
+}
+tr{
+    width : 300px;
+}
+
+
+ul.menu {
+    top:0px;
+    left:500px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+	width:200px;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+div.im{
+    position: absolute;
+    top:130px;
+    left:200px;
+    float: left;
+}
+div.content{
+    position: absolute;
+    left:1000px;
+    top:300px;
+    float: left;
+}
+div.content2{
+    position: absolute;
+    width: 800px;
+    left:450px;
+    top:260px;
+    float: left;
+    text-align: left;
+}
+div.content3{
+    position: absolute;
+    width: 800px;
+    left:200px;
+    top:800px;
+    float: left;
+    text-align: left;
+}
+table.formcs{
+	border:0px solid black;
+    position: absolute;
+    width: 800px;
+    left:300px;
+    top:950px;
+    float: left;
+    text-align: left;
+}
+table.comcs{
+    position: absolute;
+    width: 800px;
+    left:350px;
+    top:1100px;
+    float: left;
+    text-align: left;
+    border-collapse: collapse;
+    margin-bottom:70px;
+}
+#sub{
+	width:50px;
+	height:50px;
+}
+table.comcs thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #369;
+    border-bottom: 3px solid #036;
+}
+table.formcs td input{
+	width:350px;
+	height:40px;
+}
+table.formcs tbody th {
+    width: 150px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+    background: #f3f6f7;
+}
+table.comcs td {
+    width: 350px;
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #ccc;
+}
+.sli{
+    width:1100px;
+    border:2px solid black;
+}
+.exx{
+    width:850px;
+    border:1px solid rgb(32, 17, 17);
+}
+h1{
+    font-size:40px;
+    text-align: left;
+}
+
+p{
+    font-size:20px;
+    text-align: left;
+}
+
+
+
+a{color:white; text-decoration: white;}
