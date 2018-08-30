@@ -1,7 +1,7 @@
 iframe{
     position: absolute;
     height: 500px;
-    left:220px;
+    left:30%;
     top:1000px;
     width:800px;
     margin-bottom:100px;
@@ -21,6 +21,14 @@ body{
 }
 section{
 	padding-left: 200px;
+}
+footer{
+	clear: both;
+    width:100%;
+    height:50px;
+	background:#5aa9e2;
+	padding-bottom:10px;
+	line-height:10px;
 }
 
 /* table */
@@ -78,34 +86,43 @@ table.movie_review_form tbody th {
 }
 
 /* div */
-div.mpic{
-    position: absolute;
-    top:800px;
-    left:200px;
+div.aside{
+	width:200px;
+	height:500px;
+	margin-left:85%;
+	margin-bottom:50px;
+	display:inline-block;
+	position:fixed;
 }
+
 div.mcon{
     position: absolute;
     left:1000px;
     top:1100px;
     float: right;
 }
-div.im{
+div.char_img{
     position: absolute;
-    top:50px;
-    left:200px;
+    top:200px;
+    left:30%;
     float: left;
     animation-name: wind;
     animation-duration: 4s;
 }
-.im img{
+.char_img img{
     width:500px;
     height:400px;
 }
-div.content{
+div.char_content{
     position: absolute;
-    left:750px;
-    top:200px;
+    left:53%;
+    top:320px;
     float: right;
+}
+div.char_video{
+    position: absolute;
+    top:800px;
+    left:30%;
 }
 
 div.movie_img{
@@ -187,6 +204,17 @@ a{
 li a:hover {
     background-color: #111;
 }
+ul.aside_link {
+	margin-top:10px;
+}
 
 /* image */
-#titleimg{width:700px; height:100px; position:static;}
+#titleimg{
+	width:700px;
+	height:100px;
+	position:static;
+}
+.banner_img{
+	width:180px;
+	height:150px;
+}
