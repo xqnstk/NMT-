@@ -12,16 +12,16 @@
     </head>
     <body> 
         <header>
-	    	<img src="image/title.png" id="titleimg">
+	    	<a href="character.html"><img src="image/title.png" id="titleimg"></a>
         </header>
 
         <nav>
             <ul class="menu">
             	<li></li>
               <li><a href="character.html">캐릭터 소개</a></li>
-              <li><a href="movie.html">극장판 추천</a></li>
-              <li><a href="activity.html">사건 모아보기</a></li>
-              <li><a href="place.html">장소별 보기</a></li>
+              <li><a href="movie.html">극장판</a></li>
+              <li><a href="activity.html">세력 정리</a></li>
+              <li><a href="place.html">사건 보기</a></li>
             </ul>
         </nav>
 
