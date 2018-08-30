@@ -58,13 +58,13 @@ li a:hover {
 div.movie_img{
     position: absolute;
     top:200px;
-    left:200px;
+    left:350px;
     float: left;
 }
 div.movie_content{
     position: absolute;
     width: 800px;
-    left:450px;
+    left:600px;
     top:320px;
     float: left;
     text-align: left;
@@ -72,7 +72,7 @@ div.movie_content{
 div.movie_review{
     position: absolute;
     width: 800px;
-    left:200px;
+    left:350px;
     top:800px;
     float: left;
     text-align: left;
@@ -107,7 +107,7 @@ table.comcs td {
 table.comcs{
     position: absolute;
     width: 800px;
-    left:350px;
+    left:450px;
     top:1100px;
     float: left;
     text-align: left;
@@ -131,7 +131,7 @@ table.formcs{
 	border:0px solid black;
     position: absolute;
     width: 800px;
-    left:300px;
+    left:420px;
     top:950px;
     float: left;
     text-align: left;
