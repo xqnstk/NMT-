@@ -25,6 +25,10 @@ img{
     width:220px;
     height:300px;
 }
+#fbimg {
+	width: 50px;
+	height: 50px;
+}
 table img:hover{
     opacity: 0.5;
 }
